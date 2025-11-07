@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contadores com Arraste</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="app-header">
+            <h1 class="app-title">Contadores com Arraste</h1>
+            <p class="app-subtitle">Arraste para os lados para navegar entre os contadores</p>
+        </div>
+
+        <div class="counter-carousel">
+            <div class="carousel-container" id="carouselContainer">
+                <!-- Os contadores serão gerados dinamicamente aqui -->
+            </div>
+            
+            <div class="carousel-indicators" id="carouselIndicators">
+                <!-- Indicadores serão gerados dinamicamente aqui -->
+            </div>
+
+            <div class="carousel-controls">
+                <button class="carousel-btn" id="prevCounterBtn">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                        <path d="M15 18L9 12L15 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    Anterior
+                </button>
+                <button class="carousel-btn" id="nextCounterBtn">
+                    Próximo
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                        <path d="M9 18L15 12L9 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <button class="new-counter-btn" id="newCounterBtn">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                <path d="M12 5V19M5 12H19" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+            Novo Contador
+        </button>
+
+        <div class="counter-list" id="counterList">
+            <!-- Lista de contadores será gerada aqui -->
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
